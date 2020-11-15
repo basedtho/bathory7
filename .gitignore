@@ -1,0 +1,6 @@
+*.o
+builddir
+build
+.ccls-cache
+.cache
+meson.build.user
