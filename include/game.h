@@ -18,8 +18,8 @@ public:
   void render();
   void clean();
   inline bool running() { return is_running; };
+  SDL_Event *event;
   static SDL_Renderer *renderer;
-  static SDL_Event event;
 
 private:
   bool is_running{false};

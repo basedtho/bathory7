@@ -7,10 +7,11 @@ SDL_Renderer *Game::renderer{nullptr};
 
 Game::Game() {}
 
-Game::~Game() {}
+Game::~Game() { delete event; }
 
 void Game::init(const char *title, int xpos, int ypos, int width, int height,
                 bool fullscreen) {
+  event = new SDL_Event;
   int flags = 0;
   if (fullscreen) {
     flags = SDL_WINDOW_FULLSCREEN;
@@ -39,14 +40,14 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height,
 }
 
 void Game::handle_events() {
-  SDL_PollEvent(&event);
-  switch (event.type) {
+  SDL_PollEvent(event);
+  switch (event->type) {
   case SDL_QUIT:
     is_running = false;
     break;
   case SDL_KEYDOWN:
     player->moves(true);
-    switch (event.key.keysym.sym) {
+    switch (event->key.keysym.sym) {
     case SDLK_UP:
       player->move(0, -1);
       break;
@@ -62,6 +63,7 @@ void Game::handle_events() {
     default:
       break;
     }
+    break;
   case SDL_KEYUP:
     player->moves(false);
     break;
