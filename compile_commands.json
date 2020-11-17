@@ -1,26 +1,32 @@
 [
   {
-    "directory": "/home/tho/Dev/cpp/bathory7/builddir",
-    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -D_REENTRANT -MD -MQ bathory7.p/src_main.cpp.o -MF bathory7.p/src_main.cpp.o.d -o bathory7.p/src_main.cpp.o -c ../src/main.cpp",
+    "directory": "/home/tho/dev/cpp/bathory7/builddir",
+    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O3 -D_REENTRANT -MD -MQ bathory7.p/src_main.cpp.o -MF bathory7.p/src_main.cpp.o.d -o bathory7.p/src_main.cpp.o -c ../src/main.cpp",
     "file": "../src/main.cpp",
     "output": "bathory7.p/src_main.cpp.o"
   },
   {
-    "directory": "/home/tho/Dev/cpp/bathory7/builddir",
-    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -D_REENTRANT -MD -MQ bathory7.p/src_game.cpp.o -MF bathory7.p/src_game.cpp.o.d -o bathory7.p/src_game.cpp.o -c ../src/game.cpp",
+    "directory": "/home/tho/dev/cpp/bathory7/builddir",
+    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O3 -D_REENTRANT -MD -MQ bathory7.p/src_game.cpp.o -MF bathory7.p/src_game.cpp.o.d -o bathory7.p/src_game.cpp.o -c ../src/game.cpp",
     "file": "../src/game.cpp",
     "output": "bathory7.p/src_game.cpp.o"
   },
   {
-    "directory": "/home/tho/Dev/cpp/bathory7/builddir",
-    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -D_REENTRANT -MD -MQ bathory7.p/src_texture_manager.cpp.o -MF bathory7.p/src_texture_manager.cpp.o.d -o bathory7.p/src_texture_manager.cpp.o -c ../src/texture_manager.cpp",
+    "directory": "/home/tho/dev/cpp/bathory7/builddir",
+    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O3 -D_REENTRANT -MD -MQ bathory7.p/src_texture_manager.cpp.o -MF bathory7.p/src_texture_manager.cpp.o.d -o bathory7.p/src_texture_manager.cpp.o -c ../src/texture_manager.cpp",
     "file": "../src/texture_manager.cpp",
     "output": "bathory7.p/src_texture_manager.cpp.o"
   },
   {
-    "directory": "/home/tho/Dev/cpp/bathory7/builddir",
-    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -D_REENTRANT -MD -MQ bathory7.p/src_game_object.cpp.o -MF bathory7.p/src_game_object.cpp.o.d -o bathory7.p/src_game_object.cpp.o -c ../src/game_object.cpp",
+    "directory": "/home/tho/dev/cpp/bathory7/builddir",
+    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O3 -D_REENTRANT -MD -MQ bathory7.p/src_game_object.cpp.o -MF bathory7.p/src_game_object.cpp.o.d -o bathory7.p/src_game_object.cpp.o -c ../src/game_object.cpp",
     "file": "../src/game_object.cpp",
     "output": "bathory7.p/src_game_object.cpp.o"
+  },
+  {
+    "directory": "/home/tho/dev/cpp/bathory7/builddir",
+    "command": "clang++ -Ibathory7.p -I. -I.. -I../include -I/usr/include/SDL2 -Xclang -fcolor-diagnostics -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -O3 -D_REENTRANT -MD -MQ bathory7.p/src_map.cpp.o -MF bathory7.p/src_map.cpp.o.d -o bathory7.p/src_map.cpp.o -c ../src/map.cpp",
+    "file": "../src/map.cpp",
+    "output": "bathory7.p/src_map.cpp.o"
   }
 ]

@@ -1,4 +1,4 @@
-project('bathory7', 'cpp')
+project('bathory7', 'cpp', default_options : ['cpp_std=c++17'])
 dep = [dependency('SDL2')]
 dep += [dependency('SDL2_image')]
 dep += [dependency('fmt')]

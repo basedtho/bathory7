@@ -18,5 +18,6 @@ int main() {
       SDL_Delay((frame_delay - frame_time) / 2);
     }
   }
+
   game->clean();
 }

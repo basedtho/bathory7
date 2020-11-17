@@ -34,16 +34,36 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height,
   } else {
     std::exit(EXIT_FAILURE);
   }
-  player = new GameObject("../assets/hero.png", 0, 0);
+  player = new GameObject("../assets/hero.png", 320, 240);
   map = new Map();
 }
 
 void Game::handle_events() {
-  SDL_Event event;
   SDL_PollEvent(&event);
   switch (event.type) {
   case SDL_QUIT:
     is_running = false;
+    break;
+  case SDL_KEYDOWN:
+    player->moves(true);
+    switch (event.key.keysym.sym) {
+    case SDLK_UP:
+      player->move(0, -1);
+      break;
+    case SDLK_DOWN:
+      player->move(0, 1);
+      break;
+    case SDLK_LEFT:
+      player->move(-1, 0);
+      break;
+    case SDLK_RIGHT:
+      player->move(1, 0);
+      break;
+    default:
+      break;
+    }
+  case SDL_KEYUP:
+    player->moves(false);
     break;
   default:
     break;
