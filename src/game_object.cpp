@@ -37,14 +37,17 @@ void GameObject::render() {
 }
 
 void GameObject::move(int x, int y) {
-  while (is_moving) {
-    if (0 < destRect.x && destRect.x < WIDTH) {
+  if (is_moving) {
+    if ((x < 0 && 0 < destRect.x) ||
+        (x > 0 && destRect.x < WIDTH - destRect.w)) {
       destRect.x += x;
     }
-    if (0 < destRect.y && destRect.y < HEIGHT) {
+  }
+  if (is_moving) {
+    if ((y < 0 && 0 < destRect.y) ||
+        (y > 0 && destRect.y < HEIGHT - destRect.h)) {
       destRect.y += y;
     }
-    fmt::print("x: {}, y: {}, is_moving: {}\n", destRect.x, destRect.y, is_moving);
-    SDL_Delay(20);
   }
+  SDL_Delay(5);
 }
